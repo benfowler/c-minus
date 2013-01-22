@@ -1,0 +1,19 @@
+int three;
+
+
+int test(int foo)
+{
+    int three;
+
+    {
+        int three;
+	int four;
+    }
+}
+
+int main(void)
+{
+    int gh[45];
+
+    test(4);
+}

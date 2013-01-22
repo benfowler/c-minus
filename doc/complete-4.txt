@@ -1,0 +1,29 @@
+STATEMENT OF COMPLETENESS
+-------------------------
+
+STUDENT:     Ben Fowler
+NUMBER:      02251132
+SUBJECT:     ITB464 Modern Compiler Construction
+ASSESSMENT:  Assignment 4 - Code Generator for C- Compiler
+
+
+  This assignment is complete, and is entirely my own work, save for
+code fragments borrowed from Louden's Tiny C example compiler.  All
+tasks required for this assignment have been completed to the best of
+my knowlege, and at this stage, the code compiles and executes without
+apparent errors.
+
+  Code generation has shown to be working on the examples out of Louden
+(euclud.cm and selection.cm) and additionally, the compiler compiles a small
+test battery of programs written by the author, all without apparent error.
+
+  To recap, everything in this solution, including unknown defects are
+entirely my own work.
+
+- signed:
+
+
+
+Ben Fowler.
+10th June, 2000.
+

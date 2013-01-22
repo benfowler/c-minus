@@ -1,0 +1,16 @@
+
+int thirdElem(int a[])
+{
+    return a[2];
+}
+
+void main(void)
+{
+    int i;
+    int b[20];
+
+    b[0] = 111; b[1] = 222; b[2] = 333;
+    output(thirdElem(b)); 
+    output(b[1]);
+}
+

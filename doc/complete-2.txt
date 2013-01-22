@@ -1,0 +1,32 @@
+STATEMENT OF COMPLETENESS
+-------------------------
+
+STUDENT:     Ben Fowler
+NUMBER:      02251132
+SUBJECT:     ITB464 Modern Compiler Construction
+ASSESSMENT:  Assignment 2 - Predictive Parser for C-minus.
+
+
+This assignment is complete, and is entirely my own work, save for code
+ fragments borrowed from Louden's Tiny C example compiler.  All tasks required
+ for this assignment have been completed to the best of my knowlege, and at
+ this stage, the code compiles and executes without apparent errors.
+
+The grammar has been transformed to remove left recusion, and left factoring
+ has been applied on the "call" and "var" nonterminals.  The author encountered
+ a minor issue with correctly parsing "expression", and came up with a solution
+ of passing parsed ident_stmt tree fragments down the parse tree to bypass the
+ problem.
+
+Apart from this minor issue, the code submitted performs it's job in a swift
+ and robust manner.  The output of the compiler has also checked for issues
+ such as incorrect dangling-else handling, order-of-precedence and associativity and the parser appears to generate correct syntax trees for all code presented
+ to the compiler.
+
+- signed:
+
+
+
+Ben Fowler.
+2nd April, 2000.
+

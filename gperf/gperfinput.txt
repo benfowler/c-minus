@@ -1,0 +1,8 @@
+struct fastReservedWords { char *name; TokenType tok; };
+%%
+int, INT
+void, VOID
+if, IF
+else, ELSE
+return, RETURN
+while, WHILE

@@ -1,0 +1,14 @@
+void main(void)
+{
+    int i;
+
+    i = 0;
+
+    if (i == 5)
+        output(1);
+    else
+        output(0);
+
+    output(i);
+}
+

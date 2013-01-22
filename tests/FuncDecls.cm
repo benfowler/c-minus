@@ -1,0 +1,16 @@
+
+int i;
+int j;
+
+int array[20];
+
+int foo(int i, int j)
+{
+    int a;
+    int b[20];
+}
+
+int bar(void)
+{
+}
+

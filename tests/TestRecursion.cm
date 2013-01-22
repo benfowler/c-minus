@@ -1,0 +1,13 @@
+int foo(int a, int b)
+{
+    output(a);
+    output(b);
+}
+
+
+void main(void)
+{
+    foo(42, 21);
+}
+
+

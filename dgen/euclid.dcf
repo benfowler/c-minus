@@ -1,0 +1,75 @@
+.TITLE Euclid
+.FILE  "Euclid.cm"
+
+.EXPORT _main
+
+.IMPORT _input
+.IMPORT _output
+
+.PROC _gcd(.NOCHECK,.SIZE=0,.NODISPLAY,.ASSEMBLY=8)
+  .LOCAL _u 8,4 (0,0,0)
+  .LOCAL _v 12,4 (0,0,0)
+.ENTRY
+	pshAP	4
+	derefW	
+	pshZ	
+	relEQ	
+	brFalse	label1
+	pshAP	0
+	derefW	
+	popRetW	
+	exit	
+label1:
+	pshAP	4
+	derefW	
+	mkPar	4,0
+	pshAP	0
+	derefW	
+	pshAP	0
+	derefW	
+	pshAP	4
+	derefW	
+	div	noTrap
+	pshAP	4
+	derefW	
+	mul	noTrap
+	sub	noTrap
+	mkPar	4,4
+	call	_gcd,2
+	pshRetW	
+	popRetW	
+	exit	
+	endP	
+.ENDP
+
+.PROC _main(.NOCHECK,.SIZE=8,.NODISPLAY,.ASSEMBLY=8)
+  .LOCAL _x -4,4 (0,0,0)
+  .LOCAL _y -8,4 (0,0,0)
+.ENTRY
+	pshLP	-4
+	dup1
+	call	_input,0
+	pshRetW	
+	swap
+	assignW	
+	pop1
+	pshLP	-8
+	dup1
+	call	_input,0
+	pshRetW	
+	swap
+	assignW	
+	pop1
+	pshLP	-4
+	derefW	
+	mkPar	4,0
+	pshLP	-8
+	derefW	
+	mkPar	4,4
+	call	_gcd,2
+	pshRetW	
+	mkPar	4,0
+	call	_output,1
+	exit	
+	endP	
+.ENDP

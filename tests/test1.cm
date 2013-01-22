@@ -1,0 +1,17 @@
+
+int foo;
+int bar[56];
+void baz;
+
+int foobar(int one, int two[], void three) {
+int foo;
+int bar[56];
+void baz;
+
+   baz = 1 + 1;
+
+   return baz[45];
+}
+
+void quux(void) {}
+
